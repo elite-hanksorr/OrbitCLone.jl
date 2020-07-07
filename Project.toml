@@ -1,4 +1,5 @@
 name = "OrbitCLone"
+repo = "https://github.com/elite-hanksorr/OrbitCLone.jl"
 uuid = "0b49bb3b-3af5-46fc-a608-85478e6f5926"
 version = "0.0.1"
 
