@@ -1,0 +1,6 @@
+name = "orbitclone"
+uuid = "0b49bb3b-3af5-46fc-a608-85478e6f5926"
+version = "0.0.1"
+
+[deps]
+SimpleDirectMediaLayer = "98e33af6-2ee5-5afd-9e75-cbc738b767c4"
