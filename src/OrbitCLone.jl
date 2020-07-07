@@ -1,4 +1,4 @@
-module OrbitClone
+module OrbitCLone
 
 greet() = print("Hello World!")
 
