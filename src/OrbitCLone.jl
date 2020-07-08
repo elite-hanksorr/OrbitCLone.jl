@@ -18,4 +18,6 @@ function quit(win, renderer)
     SDL.Quit()
 end
 
+test = 2
+
 end # module
