@@ -18,6 +18,20 @@ function quit(win, renderer)
     SDL.Quit()
 end
 
+function runGame(win, renderer)
+
+    while true
+        e = SDL.event()
+        if e != nothing
+            print(e)
+            if e isa SDL.QuitEvent
+                quit(win, renderer)
+                break
+            end
+        end
+    end
+end
+
 test = 2
 
 end # module
