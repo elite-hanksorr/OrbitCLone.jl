@@ -1,5 +1,21 @@
 module OrbitCLone
 
-greet() = print("Hello World!")
+using SimpleDirectMediaLayer
+
+const SDL = SimpleDirectMediaLayer
+
+SDL.Init(SDL.INIT_VIDEO)
+
+function createWindow()
+    win = SDL.CreateWindow("OrbitCLone", Int32(SDL.WINDOWPOS_CENTERED()), Int32(SDL.WINDOWPOS_CENTERED()), Int32(800), Int32(600), UInt32(SDL.WINDOW_SHOWN))
+    renderer = SDL.CreateRenderer(win, Int32(-1), UInt32(SDL.RENDERER_ACCELERATED | SDL.RENDERER_PRESENTVSYNC))
+    return win, renderer
+end
+
+function quit(win, renderer)
+    SDL.DestroyRenderer(renderer)
+    SDL.DestroyWindow(win)
+    SDL.Quit()
+end
 
 end # module
